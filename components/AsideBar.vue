@@ -42,7 +42,7 @@
                                     </li>
                                 </ul>
 							</div>
-                            <!--<div class="filter_type">
+                            <div class="filter_type">
 								<h6>Fjöldi Baðherbergja</h6>
 								 <ul>
                                     <li>
@@ -53,12 +53,8 @@
                                         <label>2+</label>
                                         <input type="radio" name="bathroom" class="js-switch" @click="getvalueFromBatnrooCount(2)">
                                     </li>
-                                    <li>
-                                        <label>3+</label>
-                                        <input type="radio" name="bathroom" class="js-switch" @click="getvalueFromBatnrooCount(3)">
-                                    </li>
                                 </ul>
-							</div> -->
+							</div>
 						</div> 
 						<!--/collapse -->
 					</div>

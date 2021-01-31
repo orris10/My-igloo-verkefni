@@ -39,8 +39,7 @@ export default {
             min_price:100000,
             max_price:300000,
             enough: false,
-            pricingRange: []
-
+            pricingRange: [],
         }
     },
     css: [
@@ -81,6 +80,8 @@ export default {
         },
         updateBathroomCount: function(value){
             this.countOfBathrooms = value;
+            this.page = 1
+            this.enough = false
             this.fetchAllApartments();
             if(this.inputValue !== ''){
                 this.filterApartmentsWithInputValue()

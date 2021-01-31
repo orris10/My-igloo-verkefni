@@ -53,6 +53,10 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@forked-prs/nuxt-infinite-scroll-module',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyBRfW-RK9dXDRlpUaHCabcKAucmbF-GBUQ',
+      //you can use libraries: ['places']
+    }]
   ],
   axios:{
 
