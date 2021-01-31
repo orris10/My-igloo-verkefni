@@ -2,7 +2,7 @@
     <aside class="asideBar">
 					<div class="custom-search-input-2 inner-2">
 						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Staðsetning" @change="getInputValue($event.target.value)">
+							<input class="form-control" type="text" placeholder="Staðsetning..." @change="getInputValue($event.target.value)">
 							<i class="icon_search"></i>
 						</div>
 					</div>
@@ -12,13 +12,13 @@
 							<div class="filter_type">
                                 <h6>Verðbil frá</h6>
                                 <select class="pricing_select" v-model="pricingFromText" @change="getPricingValueFrom($event.target.value)">
-                                    <option v-for="item in pricingRange" :key="item" >{{item}} kr.</option>
+                                    <option class="pricing_option" v-for="item in pricingRange" :key="item" >{{item}} kr.</option>
                                 </select>
                             </div>
                             <div class="filter_type">
                                 <h6>Verðbil til</h6>
                                 <select class="pricing_select" v-model="pricingToText" @change="getPricingValueTo($event.target.value)">
-                                    <option v-for="item in pricingRange" :key="item" >{{item}} kr.</option>
+                                    <option class="pricing_option" v-for="item in pricingRange" :key="item" >{{item}} kr.</option>
                                 </select>
                             </div>
 							<div class="filter_type">
