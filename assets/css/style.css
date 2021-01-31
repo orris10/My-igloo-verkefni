@@ -8594,6 +8594,9 @@ div.column {
     display: inline;
     float: left;
   }
+  .gridView{
+    float: inherit !important;
+  }
   .row{
     flex-direction: column !important;
     justify-content: center;
