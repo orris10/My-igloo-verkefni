@@ -28,6 +28,9 @@ import AsideBar from '../components/AsideBar.vue';
 import ApartmentsListing from '../components/ApartmentsListing.vue';
 import ApartmentsHeader from '../components/ApartmentsHeader';
 export default {
+    head:{
+        title:'Finnur þú þína leiguíbúð?'
+    },
     data(){
         return{
             apartments:[],
