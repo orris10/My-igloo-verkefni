@@ -5,8 +5,7 @@
                         <div class="isotope-item popular gridView">
 								<div class="box_grid">
 									<figure>
-										<a href="#0" class="wish_bt"></a>
-										<a href="hotel-detail.html"><img :src="item.images[0].image.file_field" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+										<a href="#"><img :src="item.images[0].image.file_field" class="img-fluid" alt="" width="800" height="533"><div class="read_more"></div></a>
 										<small>{{item.address.city.name}}</small>
 									</figure>
 									<div class="wrapper">
