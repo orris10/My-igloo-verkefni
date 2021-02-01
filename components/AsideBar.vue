@@ -86,7 +86,7 @@ export default {
         getPricingValueFrom(value){
             value.substring(0, value.length-4)
             this.pricingFrom = parseInt(value)
-            if(this.pricingFrom < this.pricingTo){
+            if(this.pricingFrom <= this.pricingTo){
                 this.$emit('update:pricingValues', this.pricingFrom, this.pricingTo)
             }
             else{
@@ -96,13 +96,13 @@ export default {
         getPricingValueTo(value){
             value.substring(0, value.length-4)
             this.pricingTo = parseInt(value)
-            if(this.pricingFrom < this.pricingTo){
+            if(this.pricingFrom <= this.pricingTo){
                 this.$emit('update:pricingValues', this.pricingFrom, this.pricingTo)
             }
             else{
                 alert('"Verðtil frá" má ekki vera stærra en "verðbil til"')
             }
-        }
+        },
     }
 }
 </script>
