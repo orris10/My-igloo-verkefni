@@ -64,6 +64,7 @@ export default {
         },
         updateBedroomCount: async function(value){
             this.countOfBedrooms = value;
+            //set page and enough to default
             this.page = 1
             this.enough = false
             await this.fetchAllApartments();
@@ -74,6 +75,7 @@ export default {
         updatePricingValues: async function(v1, v2){
             this.min_price = v1;
             this.max_price = v2;
+            //set page and enough to default
             this.page = 1
             this.enough = false
             await this.fetchAllApartments();
@@ -83,6 +85,7 @@ export default {
         },
         updateBathroomCount: function(value){
             this.countOfBathrooms = value;
+            //set page and enough to default
             this.page = 1
             this.enough = false
             this.fetchAllApartments();
@@ -102,6 +105,8 @@ export default {
             this.apartments.items = result
         },
         loadMoreApartments: async function() {
+            //use his function for infinite scroll
+            //get mode data from diffrent page and add to the apartments array.
             if(this.page >= this.maxPage){
                 this.enough = true;
                 return;
